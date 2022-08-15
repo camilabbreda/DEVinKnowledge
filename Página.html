@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Imagens/LivroLogo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./customizacao.css" />
+    <title>DEVinKnowledge</title>
+  </head>
+  <body>
+    <div class="corpo">
+      <nav class="formulario" id="formulario">
+        <div class="logo">
+          <div>
+            <img
+              src="./Imagens/LivroLogo.png"
+              style="height: 100px; width: auto"
+              alt="imagem de um livro"
+            />
+          </div>
+          <div class="textoDaLogo">
+            <div
+              style="margin-top: 10%; font-size: 25px; color: rgb(90, 86, 86)"
+            >
+              DEVinKnowledge
+            </div>
+            <div style="color: rgb(90, 86, 86); font-size: 18px">
+              Learn, Code and Save
+            </div>
+          </div>
+        </div>
+        <form class="formularioPrincipal">
+          <div id="inputs">
+            <p class="tituloForm">Título*</p>
+            <input
+              type="text"
+              name="titulo"
+              id="titulo"
+              class="inserirValores"
+              minlength="8"
+              required
+              maxlength="64"
+              required
+              placeholder="Digite um título"
+            />
+            <p class="tituloForm">Linguagem/Skill*</p>
+            <input
+              type="text"
+              name="linguagem/skill"
+              id="linguemSkill"
+              class="inserirValores"
+              minlength="4"
+              required
+              maxlength="16"
+              placeholder="Digite uma Linguagem ou Skill"
+            />
+            <p class="tituloForm">Categoria*</p>
+            <select
+              required
+              name="categoria"
+              id="categoria"
+              class="inserirValoresSeleciona"
+            >
+              <option value="">Selecione uma Categoria</option>
+              <!-- CATEGORIAS DO POST -->
+              <option value="SoftSkill">SoftSkill</option>
+              <option value="FrontEnd">FrontEnd</option>
+              <option value="FullStack">FullStack</option>
+              <option value="BackEnd">BackEnd</option>
+              <!-- --------------------- -->
+            </select>
+            <p class="tituloForm">Descrição*</p>
+            <textarea
+              name="post"
+              class="descricaoPost"
+              id="descricaoDoPost"
+              cols="30"
+              rows="10"
+              minlength="32"
+              required
+              maxlength="512"
+              required
+              placeholder="Ecreva aqui o detalhamento da sua dica"
+            ></textarea>
+            <p class="tituloForm">Vídeo do Youtube</p>
+            <input
+              type="text"
+              name="linkYoutube"
+              id="linkYoutube"
+              class="inserirValores"
+              placeholder="ttps//suaurl.com"
+            />
+          </div>
+          <div>
+            <div class="botoesLimparSalvar">
+              <button id="botaoLimpar" class="botaoLimpar">Limpar</button>
+              <button id="botaoSalvar" class="botaoSalvar">Salvar</button>
+            </div>
+          </div>
+        </form>
+      </nav>
+      <div class="ladoEsquerdo">
+        <div class="ladoEsquerdo">
+          <!-- BLOCO PAINEL CATEGORIAS-->
+          <ul class="placar" id="placar"></ul>
+          <!-- ====================/PAINEL CATEGORIAS============== -->
+          <div class="board">
+            <!-- BLOCO PESQUISAR E PUBLICAÇÕES -->
+            <div class="quadroGeral">
+              <!-- BLOCO PESQUISAR -->
+              <div class="pesquisaEPublicacoes" id="pesquisaEPublicacoes">
+                <div class="pesquisa">
+                  <input
+                    type="text"
+                    id="inputPesquisa"
+                    placeholder="Digite um título para buscar..."
+                  />
+                  <button class="botaoPesquisar" id="filtrar">
+                    <img
+                      src="./Imagens/logoPesquisa.png"
+                      style="width: 18px"
+                      alt=""
+                    />
+                  </button>
+                  <button class="botaoPesquisar" id="limpar">
+                    <img
+                      src="./Imagens/LimparPesquisa.png"
+                      style="width: 22px"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <ul id="publicacoes" class="listaDePublicacoes"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="./java2.js"></script>     -->
+    <script src="./EscreverHTML.js" type="module"></script>
+    <script src="./FuncoesGerais.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+body{
+    background-image: url("./Imagens/fundo\ projeto.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width:1000px;
+    height:auto;
+
+}
+.ladoEsquerdo{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    height: auto;
+    min-width: 1000px;
+
+}
+
+.logo{
+    display: flex; 
+    flex-direction: row; 
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.textoDaLogo{
+    justify-content: left;
+    flex-direction: column; 
+    display: flex; 
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.inserirValores {
+width: 320px;
+height: 25px;
+border-radius: 12px;
+border: 1px #cad4d6 ;
+}
+
+.inserirValoresSeleciona {
+    width: 325px;
+    height: 25px;
+    border-radius: 12px;
+    border: 1px #cad4d6 ;
+}
+.tituloForm{
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    margin-top: 20px;
+    color: #212222;
+}
+
+.formulario {
+    /* align-items: center;
+    align-content: center;
+    align-self: center; */
+    text-align: center;
+    background-color: #d6eef4;
+    width: 450px;
+    margin-left: 25px;
+ 
+    border-radius: 12px;
+    
+    /* height: 100%; */
+    
+}
+.descricaoPost{
+    width: 325px;
+    height: 200px;
+    border-radius: 12px;
+    border: 1px #cad4d6 
+}
+
+.corpo {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    
+}
+.botoesLimparSalvar{
+
+    text-align: center;    
+}
+
+.botaoLimpar{
+    border: 2px solid #cad4d6 ;
+    background-color: #a1c0c8;
+    color: #575a5b;
+    width: 150px;
+    height: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-left: 0px;
+    transition: transform 0.3s;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(111, 174, 195);
+    transform: translate(0px, -5px);
+    transition: transform 0.3s;
+}
+
+.botaoSalvar{
+    border: 2px solid #cad4d6 ;
+    background-color: #a1c0c8;
+    color: #575a5b;
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(111, 174, 195);
+    transform: translate(0px, -5px);
+    transition: transform 0.3s;
+}
+
+
+.board{
+    background-color: #d6eef4;
+    margin-left: 25px; 
+    margin-right: 15px;
+    border-radius: 12px;
+    border-right: 15px;
+    width: 95%;
+    
+
+}
+
+.placar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    text-align: center;
+    border-radius: 12px;
+    
+
+   
+}
+.divCustomizacaoPlacar{
+    border-radius: 12px;
+    background-color:  white;
+    vertical-align: middle; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 160px; 
+    height: 80px; 
+    margin: 15px;
+    box-shadow: 5px 12px 35px rgb(0, 0, 0);
+    transition: transform 0.3s;
+}
+.quadroGeral{
+
+    margin-left:15px; 
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+}
+.botaoPesquisar{
+    border: 2px solid #cad4d6 ;
+    background-color: #a1c0c8;
+    color: #575a5b;
+    width: 40px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 12px;
+    border-radius: 14px;
+    margin-top: 0px;
+    transition: transform 0.3s;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(111, 174, 195);
+}
+#inputPesquisa{
+    width: 94%; 
+    border-radius: 12px; 
+    height: 30px;
+    border: 1px #575a5b;
+    background-color: #ffffff;
+    
+}
+
+.pesquisa{
+    
+    width: 98%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+.publicacoes{
+    border-radius: 12px;
+    display: flex; 
+    flex-direction:column;
+    background-color: white ; 
+    list-style-type:none;
+
+    margin-left:-40px ;
+
+    height: auto;
+
+    width: 100%;
+    /* height: 800px; */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    
+}
+
+#tituloPublicado{
+    text-align: center; 
+    font-weight: bold;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.caixaDeTextoPublicacao{
+    
+    display:flex; 
+    flex-direction:row
+    
+}
+.publicado{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.botoesExcluirEditarPlay{
+    display: flex; 
+    flex-direction: row; 
+    margin-bottom: 1%;
+    justify-content: right;
+    
+}
+
