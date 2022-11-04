@@ -1,9 +1,11 @@
 # Projeto DEVinKnowledge 
 
 ```
->Projeto Desenvolvido para o Curso DEVinHouse para compor o processo Avaliativo.
+Projeto Desenvolvido para o Curso DEVinHouse para compor o processo Avaliativo.
 
-O DEVinKnowlege foi criado com a finalidade de permitir o compartilhamento de informações através de uma Plataforma. A API foi desenvolvida com linguagem de JavaScript puro e utiliza o localHost como banco de dados temporário.
+O DEVinKnowlege foi criado com a finalidade de permitir o compartilhamento de informações 
+através de uma Plataforma. A API foi desenvolvida com linguagem de JavaScript puro e utiliza 
+o localHost como banco de dados temporário.
 ```
 ### Como executar a aplicação
 
